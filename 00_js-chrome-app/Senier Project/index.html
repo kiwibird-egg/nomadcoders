@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="top">
+        <div class="top-left">
+            <span class="js-weather"></span>
+        </div>
+        <div class="top-center">
+            <a>&nbsp&nbsp</a>
+            <a class="name">Hello null!</a>
+            <span class="nameSetter">⚙</span>
+        </div>
+        <div class="top-right">
+            <!-- <div class="searchBox_wrap"> -->
+                <form class="searchBox">
+                    <input class="searchInput" type=text placeholder="search for Google">
+                </form>
+            <!-- </div> -->
+                <!-- <i class="fas fa-search"></i> -->
+        </div>
+        
+    </div>
+    <div class="main">
+        <div class="clock_wrap"> 
+            <span class="clock_hour">00</span>
+            <span class="clock_dot">:</span>
+            <span class="clock_min">00</span> 
+            <!-- <div class="clock_horizon"></div> -->
+            <div class="clock_etc">
+                <span class="clock_ampm">PM</span>    
+                <span class="clock_sec">32</span>
+            </div>
+        </div>
+        
+        <div class="toDoList">
+            <form class="js-toDoForm">
+                <div class="toDoInputBox">
+                    <input class="toDoInput" type="text" placeholder="Write a to do" />
+                </div>
+              </form>
+              <!--=========================-->
+              <div class="toDoListBox">
+                  <div class="pending">
+                      <div class="toDoTitle">
+                          <a>✔Pending✔</a>
+                      </div>
+                    <ul class="js-toDoList"></ul>
+                  </div>
+                  <div class="finished">
+                      <div class="toDoTitle">
+                          <a>✔Finished✔</a>
+                      </div>
+                    <ul class="js-toDoList-finished"></ul>
+                  </div>
+              </div>
+              
+              <!--=========================-->
+              
+        </div>
+    </div>
+    <!-- <div class="bottom">
+        바텀
+    </div> -->
+    <div class="bgImage_wrap">
+        <img class="bgImage" src="">
+    </div>
+    <script src="bgImage.js"></script> 
+    <script src="weather.js"></script> 
+    <script src="name.js"></script> 
+    <script src="todo.js"></script> 
+    <script src="clock.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

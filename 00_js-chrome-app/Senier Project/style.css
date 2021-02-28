@@ -1,0 +1,192 @@
+body {
+    margin : 0px;
+    
+}
+p {
+    margin: 0;
+}
+
+.top{
+    background-color: rgba(0, 0, 0, 0.500);
+    color: white;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    display: flex;
+}
+.top > div {
+    width: 33%;
+}
+.top-left{
+    text-align: left;
+    padding-left: 30px ;
+}
+.top-right{
+    text-align: right;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.nameSetter{
+    cursor: pointer;
+}
+
+.main{
+    height: 400px;
+    width: 400px;
+    position:  absolute;
+    top : 50%;
+    left : 50%;
+    margin : -400px 0 0 -200px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.searchBox{
+    background-color: rgba(255, 255, 255, 0.1);
+    width : 200px;
+    height: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 7px;
+    margin-top: 5px;
+    margin-bottom:5px;
+
+    box-shadow: 0 -3px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.searchBox:focus-within{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+}
+.searchInput{
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    border: none;
+    width:375px;
+    margin : 0px 12px 0px 12px;
+}
+
+.searchInput::placeholder{
+    color:rgb(255, 255, 255);
+    text-align: right;
+}
+.searchInput:focus::-webkit-input-placeholder {
+    color:transparent; 
+}
+
+.clock_wrap{
+    text-shadow: 3px 3px 6px rgb(87, 87, 87)
+}
+
+.clock_etc{
+    width: 100%;
+}
+.clock_ampm,
+.clock_sec{
+    display: inline-block;
+    font-size: 2rem;
+    color : rgba(255, 255, 255, 0.9);
+    text-align: center;
+    width: 49%;
+}
+.clock_hour,
+.clock_dot,
+.clock_min{
+    font-size: 10rem;
+    color : rgba(255, 255, 255, 0.9);
+}
+/* .clock_horizon{
+    height : 1px;
+    background-color:rgba(255, 255, 255, 0.5);
+} */
+
+
+.bgImage_wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    contain: layout paint style;
+    pointer-events: none;
+    user-select: none;
+    z-index : -1;
+}
+.bgImage{
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 0;
+}
+
+.toDoList{
+    margin-top:40px;
+}
+
+
+.toDoInputBox{
+    background-color: rgba(255, 255, 255, 0.7);
+    width : 400px;
+    height: 35px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 7px;
+    margin-bottom:40px;
+
+    box-shadow: 0 -3px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.toDoInputBox:focus-within{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+}
+.toDoInput{
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    border: none;
+    width:375px;
+    margin : 0px 12px 0px 12px;
+}
+
+.toDoInput::placeholder{
+    color:rgb(0, 0, 0);
+}
+.toDoInput:focus::-webkit-input-placeholder {
+    color:transparent; 
+}
+
+
+.toDoListBox{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 7px;
+    padding: 5px;
+    min-height: 100px;
+}
+.pending{
+    width : 50%;
+
+}
+.finished{
+    width : 50%;
+}
+.toDoTitle{
+    text-align: center;
+}
+
+.js-toDoList,
+.js-toDoList-finished{
+    list-style: none;
+}
+
+.delBtn{
+    cursor: pointer;
+}
+.finBtn{
+    cursor: pointer;
+}
