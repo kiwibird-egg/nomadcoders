@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
+</head>
+
+<body style="padding:20px">
+  {% for preview in previews:%}
+  {% if preview["author"] == None :%}
+  <div>
+    <span>[deleted]</span>
+  </div>
+  <hr>
+  {% else:%}
+  <div>
+    <strong>{{preview["author"]}}: </strong>
+    <br>
+    <span>{{preview["text"]|safe}}</span>
+  </div>
+  <hr>
+  {% endif %}
+  {% endfor %}
+
+  {% if (previews|length)==0: %}
+  <span> No comments </span>
+  {% endif %}
+</body>
+
+</html>

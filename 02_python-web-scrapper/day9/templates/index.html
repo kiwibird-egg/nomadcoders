@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
+</head>
+
+<body>
+  <header>
+    <h1>My News</h1>
+    <form style="text-align:center">
+      <span>
+        Order by: 
+        <a href="/?order_by=popular">Popular</a>
+        |
+        <a href="/?order_by=new">New</a>
+      </span>
+    </form>
+  </header>
+  <section>
+    <!--=============================-->
+  {% for preview in previews: %}
+    <div style="border-bottom:1px solid black; padding:10px; text-align:left; width:100%;margin:20px;">
+      <div>
+        <span><a href="{{preview["objectID"]}}">{{preview["title"]}}</a></span>
+        <a href="{{preview["url"]}}" target="_blank">
+          ({{preview["url"]}})
+        </a>
+      </div>
+      <div>
+        <span>{{preview["points"]}} points | By:{{preview["author"]}} | {{preview['num_comments']}}comments</span>
+      </div>
+    </div>
+  {% endfor %}
+    <!--=============================-->
+  <section>
+</body>
+
+</html>
