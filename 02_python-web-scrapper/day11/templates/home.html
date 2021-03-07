@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job finder</title>
+    <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            border: 1px solid rgb(240, 240, 240);
+            height: 200px;
+            width: 350px;
+            box-shadow: 1px 1px 3px rgb(199, 199, 199);
+            border-radius: 5px;
+        }
+        .container__div{
+            height: 33.33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container__div:first-child > h1{
+            font-weight: 600;
+        }
+        .container__div:nth-child(2) > input{
+            width: 272.4px;
+            border: 0;
+            border-radius: 0px;
+            border-bottom: 2px solid rgb(220, 220, 220);
+        }
+        .container__div:nth-child(2) > input:focus{
+            outline: none;
+            border-bottom: 2px solid rgb(150, 150, 150);
+        }
+        .container__div:last-child > input{
+            box-shadow: 1px 1px 3px rgb(199, 199, 199);
+            border-radius: 0px;
+            width: 300px;
+            cursor: pointer;
+        }
+        .container__div:last-child > input:focus{
+            outline: none;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="/read" class="container">
+            <div class="container__div">
+                <h1>IT Job Finder</h1>
+            </div>
+            <div class="container__div">
+                <input type="text">
+            </div>
+            <div class="container__div">
+                <input type="submit" value="Look up!">
+            </div>
+    </form>
+    
+</body>
+</html>
