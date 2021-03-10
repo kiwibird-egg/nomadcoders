@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body{
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: cadetblue;
+  }
+  .wrap{
+      background-color: white;
+      height: 750px;
+      width: 350px;
+  }
+  /*=====================< header >====================*/
+  .header{
+   height: 10%;
+   border-bottom: 0px solid black;   
+   display: flex;
+   padding:20px;
+  }
+  .header__left{
+      width: 33.3%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  }
+  .header__mid{
+      width: 33.3%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bolder;
+  }
+  .header__right{
+      width: 33.3%;
+      display: flex;
+  }
+  /*=====================< main >====================*/
+  .main{
+      height: 90%;
+  }
+  .main__top{
+      height: 25%;
+      border-bottom: 0px solid black;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  .main__top__pic{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .fa-image{
+      color:white;
+      font-size: 48px;
+  }
+  .main__top__info{
+      width: 50%;
+  }
+  .main__top__pic > div{
+    height: 130px;
+    width: 130px;
+    background-color: #FFBD11;
+    border:2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__top__info__title{
+      font-size: 36px;
+      font-weight: bolder;
+  }
+  .main__top__info__singer{
+      margin-top:25px;
+      font-weight: bold;
+  }
+  .main__mid{
+      height: 15%;
+      border-bottom: 0px solid black;
+      display: flex;
+      justify-content: space-between;
+      padding:20px;
+  }
+  .main__mid>div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .play-btn{
+    width:159px;
+    border:2px solid black;
+    border-radius: 15px;
+    box-shadow: 0px 4px black;
+  }
+  .heart-btn{
+    width: 53px;
+    border:2px solid black;
+    border-radius: 26.5px;
+    box-shadow: 0px 4px black;
+  }
+  .add-btn{
+    width: 53px;
+    border:2px solid black;
+    border-radius: 26.5px;
+    box-shadow: 0px 4px black;
+  }
+  .main__list{
+      height: 70%;
+  }
+  .list{
+      height: 100px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  .list__pic{
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .list__info{
+      width: 70%;
+  }
+  .list__pic > div{
+      border:2px solid black;
+      border-radius: 10px;
+      height: 60px;
+      width: 60px;
+  }
+  .list__info__title{
+      font-size: 24px;
+      font-weight: bolder;
+  }
+  .list__info__singer{
+      margin-top: 8px;
+  }

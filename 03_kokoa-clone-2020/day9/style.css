@@ -1,0 +1,89 @@
+body{
+    height: 100vh;
+    background-color: #6BBCBE;
+}
+section{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes wrap1{
+    from{
+        transform: rotateZ(0deg)
+    }
+    to{
+        transform: rotateZ(180deg);
+    }
+}
+
+.wrap1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    animation: wrap1 1s ease-in-out infinite;
+    
+}
+
+
+.small-circle{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+@keyframes wrap2{
+    0%{
+        transform: scaleY(1);
+    }
+    25%{
+        transform: scaleY(1.5);
+    }
+    50%{
+        transform: scaleY(1);
+    }
+    100%{
+
+    }
+}
+
+.wrap2{
+    display: flex;
+    width: 150px;
+    height: 200px;
+    justify-content: space-between;
+}
+
+.bar{
+    width: 20px;
+    height: 80px;
+    background-color: white;
+}
+
+.bar:nth-child(1){
+    animation: wrap2 1s ease-in-out infinite;
+    animation-delay: 0s;
+}
+.bar:nth-child(2){
+    animation: wrap2 1s ease-in-out infinite;
+    animation-delay: 0.1s;
+}
+.bar:nth-child(3){
+    animation: wrap2 1s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+.bar:nth-child(4){
+    animation: wrap2 1s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+.bar:nth-child(5){
+    animation: wrap2 1s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+.bar:nth-child(6){
+    animation: wrap2 1s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
