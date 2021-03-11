@@ -1,0 +1,64 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color:#DDE1D4;
+  padding:15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin:0 auto;
+}
+
+.one{
+    background-color:#DAE7DE;
+    color: #F44607;
+    grid-area: one;
+}
+.two{
+    background-color: #008A69;
+    color: #DAE7DE;
+    grid-area: two;
+}
+.three{
+    background-color: #F44607;
+    color: #DAE7DE;
+    grid-area: three;
+}
+.four-1{
+    background-color: #F7ABC5;
+    color: #F44607;
+    grid-area: four-1;
+}
+.four-2{
+    background-color: #5F5FA9;
+    color: #DAE7DE;
+    grid-area: four-2;
+}
+
+.four-3{
+    background-color: #FDBF28;
+    color: #F44607;
+    grid-area: four-3;
+}
+
+.four-4{
+    background-color: #F97374;
+    color: #DAE7DE;
+    grid-area: four-4;
+}
+
+body{
+    display: grid;
+    grid-template: 
+    "one one two two"
+    "one one two two"
+    "three three four-1 four-2"
+    "three three four-3 four-4"
+    
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}

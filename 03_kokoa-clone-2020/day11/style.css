@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+      position: relative;
+  }
+  header{
+      height: 100px;
+      background-color: #FFCE33;
+      padding:20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .search-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top:80px;
+      width: 100%;
+  }
+  #search{
+      width: 90%;
+      height: 30px;
+      padding: 20px;
+      border : 1px solid rgb(231, 231, 231);
+      border-radius: 50px;
+  }
+  #search:focus{
+      outline: none;
+  }
+
+  main>.content{
+      padding: 30px;
+  }
+.content-top__wrap{
+    display: flex;
+    flex-direction: row;
+}
+.content-top__wrap__pic{
+    width: 40%;
+}
+.content-top__wrap__info{
+    width: 60%;
+}
+.content-top__wrap__info>div{
+    padding:5px
+}
+  .content-top__wrap__pic>div{
+      height: 200px;
+      width: 150px;
+      border-radius: 5px;
+      background-color: #ccc;
+  }
+.info__title{
+    font-weight: bold;
+    font-size: 18px;
+}
+.info__subtitle{
+    color: grey;
+}
+  h5{
+      font-size: 24px;
+      font-weight: bold;
+  }
+.info__btns-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn1{
+    background-color:rgb(243, 243, 243);
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+}
+.info__btns-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn2{
+    height: 40px;
+    width: 40px;
+    background: #FFCE33;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn3{
+    color: white;
+    background-color:rgb(0, 0, 0);
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+}
+.content-mid__wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.poster{
+    height: 150px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.post_wrap{
+    width: 25%;
+}
+.img1{
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.content-bottom__wrap{
+    display: flex;
+    flex-direction: row;
+}
+.info2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.info2>div{
+    padding: 10px;
+}
