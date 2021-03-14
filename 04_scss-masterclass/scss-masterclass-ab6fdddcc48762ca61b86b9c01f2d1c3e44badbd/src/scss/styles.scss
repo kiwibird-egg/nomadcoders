@@ -1,0 +1,10 @@
+@import "_variables";
+@import "_mixins";
+body {
+  background: $bg;
+}
+
+h1 {
+    @include sexyTitle;
+}
+ 
