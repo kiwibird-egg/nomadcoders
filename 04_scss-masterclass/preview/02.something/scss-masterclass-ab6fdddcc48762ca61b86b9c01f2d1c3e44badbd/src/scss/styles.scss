@@ -1,0 +1,20 @@
+@mixin fontColor($color){
+  color: $color;
+}
+
+.wrap{
+  h1{
+    color:$red;
+  }
+}
+
+$red: #ff00c8;
+// $white: #f0eff0;
+// $fixedWidth:33%;
+
+// @mixin fontColor($color){
+//   color: $color;
+// }
+// h1{
+//   @include fontColor(red);
+// }
