@@ -1,1 +1,7 @@
+리액트 설치 
 npx create-react-app
+
+앱 생성
+npx create-react-app movie_app_2019
+
+npm start
